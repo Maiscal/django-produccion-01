@@ -107,6 +107,8 @@ Ejemplo:
 ![https://github.com/taw-desarrollo-plataformas-web/django-produccion-01/raw/main/imgs/img-app-sock.png](https://github.com/taw-desarrollo-plataformas-web/django-produccion-01/raw/main/imgs/img-app-sock.png  "img-sock")
 
 5) Si todo marcha bien, se puede pasar a la siguiente parte.
+6) Si no funciona hasta ahora puede haber un error en los permisos de nginx.com, esto es propio de ngnix debido a que no puede utilizar el user para modificar esto debemos:
+   Con los permisos de administrador ponemos sudo etc/nginx y en ese directorio encontramos el archivo nginx.com el cual modificaremos y reemplazaremos en la linea 1. user y en ves de www-data o cualquier otro dato debe de ser el root.
 
 ### Parte 3
 * Configuración del servidor web **nginx**. Se asume que se tiene instalado nginx en el sistema operativo.
