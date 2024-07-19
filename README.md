@@ -159,6 +159,8 @@ sudo ln -s /etc/nginx/sites-available/proyecto01 /etc/nginx/sites-enabled
 ![](https://github.com/taw-desarrollo-plataformas-web/django-produccion-01/raw/main/imgs/proyecto-0.png) 
 
 6) Verificar que el proyecto funcione.
+7) Si no funciona hasta ahora puede haber un error en los permisos de nginx.com, esto es propio de ngnix debido a que no puede utilizar el user para modificar esto debemos:
+   Con los permisos de administrador ponemos sudo etc/nginx y en ese directorio encontramos el archivo nginx.com el cual modificaremos y reemplazaremos en la linea 1. user y en ves de www-data o cualquier otro dato debe de ser el root.
 
 #### Opción 2
 
